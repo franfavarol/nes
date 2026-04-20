@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NES Player</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    #game {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+
+  <script>
+    window.EJS_player = '#game';
+    window.EJS_core = 'fceumm';
+    window.EJS_gameUrl = './Patoaventuras.nes';
+    window.EJS_pathtodata = 'https://cdn.emulatorjs.org/4.2.3/data/';
+    window.EJS_startOnLoaded = true;
+  </script>
+  <script src="https://cdn.emulatorjs.org/4.2.3/data/loader.js"></script>
+</body>
+</html>
